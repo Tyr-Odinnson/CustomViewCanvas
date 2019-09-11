@@ -14,7 +14,7 @@ import androidx.annotation.RequiresApi;
 import java.util.Random;
 public class CanvasExample extends View {
     Random r = new Random();
-
+    int counter;
 
     public CanvasExample(Context context) {
         super(context);
@@ -84,7 +84,10 @@ public class CanvasExample extends View {
             }
         }
 
-        invalidate();
+        if (counter <=6){
+            invalidate();
+        }
+        counter++;
 
     }
 }
