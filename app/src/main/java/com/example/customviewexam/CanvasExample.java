@@ -84,10 +84,10 @@ public class CanvasExample extends View {
             }
         }
 
-        if (counter <=6){
+        //if (counter <=6){
             invalidate();
-        }
-        counter++;
+        //}
+       // counter++;
 
     }
 }
